@@ -1,0 +1,37 @@
+<ion-view title="Now Playing" ng-controller="playerController">
+	<ion-content class="has-header padding">
+		<div class="bar bar-subheader">
+			<h2 class="title"><b>{{player.title}}</b></h2>
+		</div>
+
+		<div class="list card">
+			<div class="item item-image">
+				<img src="{{player.art}}">
+			</div>
+			<div class="button-bar">
+				<button class="control prev button icon ion-skip-backward" ng-click="player.previous()"></button>
+		        <button class="control play button icon ion-play" ng-click="player.play()" ng-hide="player.playing"></button>
+		        <button class="control pause button icon ion-pause" ng-click="player.pause()" ng-show="player.playing"></button>
+		        <button class="control next button icon ion-skip-forward" ng-click="player.next()"></button>
+			</div>
+		</div>
+
+		<div class="list card">
+			<div class="item item-divider">
+				Library
+			</div>
+
+			<a class="item item-icon-right" ng-repeat="song in songs" ng-click="player.playlist.add(song)">
+			    <i class="icon ion-plus"></i>
+			    {{song.title}}
+		  	</a>
+			<div class="item item-divider">
+				Play Queue
+			</div>
+			<a class="item item-icon-right" ng-repeat="list in player.playlist" ng-click="player.playlist.remove($index)">
+			    <i class="icon ion-minus"></i>
+			    {{list.title}}
+		  	</a>
+		</div>
+	</ion-content>
+</ion-view>

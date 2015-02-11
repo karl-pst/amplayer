@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.amplayer" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Amplayer</name>
+  <description>
+        Mobile player for Ampache.
+    </description>
+  <author email="yanser25@gmail.com" href="http://about.me/bryancs">
+      Bryan CS
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <access origin="http://122.52.117.41"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="Orientation" value="portrait" />
+  <!--preference name="ChildBrowser" value="disable"/-->
+  <!--preference name="PopupBlocker" value="enable"/-->
+  <!--preference name="WebSecurity" value="disable"/-->
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>  
+</widget>

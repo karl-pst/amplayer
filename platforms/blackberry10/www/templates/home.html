@@ -1,0 +1,17 @@
+<ion-view title="Home">
+	<ion-content class="has-header">
+		<div class="list list-inset" ng-controller="loginController">
+			<form name="loginForm" ng-submit="login()">
+				<label class="item item-input">
+				<input type="text" name="username" ng-model="username" placeholder="User Name">
+				</label>
+				<label class="item item-input">
+				<input type="password" name="password" ng-model="password" placeholder="Password">
+				</label>
+				<div>
+					<input type="submit" class="button button-block button-positive" value="Sign In">
+				</div>
+			</form>
+		</div>
+	</ion-content>
+</ion-view>

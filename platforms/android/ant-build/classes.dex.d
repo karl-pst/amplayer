@@ -1,0 +1,20 @@
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes.dex : \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard$1.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard$2.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\amplayer.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\BuildConfig.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\R$attr.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\R$drawable.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\R$string.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\R$xml.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer\R.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\amplayer.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\BuildConfig.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\R$attr.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\R$drawable.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\R$string.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\R$xml.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\com\ionicframework\amplayer576313\R.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+D:\Android\Projects\amplayer\platforms\android\ant-build\dexedLibs\classes-54472533a3e08f227e9403496b4c42cc.jar \

@@ -1,0 +1,47 @@
+/* Empty. Add your own CSS if you like */
+.home {
+    background: url("../img/bg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.logo {
+	text-align: center;
+	font-weight: bold;
+	font-size: 150px;
+	color: #4a87ee;	
+}
+.loginForm label, .loginForm{	
+	background: none !important;
+}
+.loginForm input{
+	color: #fff !important;
+}
+.bar-footer{	
+	background: rgba(0, 0, 0, 0) !important;
+}
+.footer{
+	color: #888888 !important;
+	font-size: 12px !important;
+}
+
+
+/* Modal, Popup, Loader */
+.loader{
+	width: 200px;
+}
+
+.row{	
+	margin: 0 !important;
+}
+
+.col-50 div{
+	height: 100%;
+	border: solid black 1px;
+}
+
+
+/* Player */
+.player .list.card{
+	/*margin: 0 !important;*/
+}

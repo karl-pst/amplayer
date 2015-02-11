@@ -1,0 +1,39 @@
+<ion-view title="{{player.songTitle}}">	
+	<ion-nav-buttons side="right">
+		<button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content has-bouncing="true" class="player has-header padding">
+		<div class="list card">
+			<div class="item item-divider">
+				<div ng-click="toggleQueue()">Playlist/Album/Genre Name<i class="icon ion-more" style="float:right;"></i></div>
+				<div id="queue" class="list card" style="display:none;">					
+					<a class="item item-icon-right" ng-repeat="list in player.playlist" ng-click="player.queue.remove($index)">
+					    <i class="icon ion-minus"></i>
+					    {{list.title}}
+				  	</a>
+				</div>				
+			</div>
+			<div class="item item-image">
+				<img src="{{player.albumArt}}">
+			</div>			
+		</div>					
+	
+		<div class="range range-positive">
+		    <i>{{mm}}:{{ss}}</i>			
+		    <input id="seek" type="range" min="0" ng-model="data.seek" ng-change="seeked();" max="{{max}}" value="{{data.seek}}">
+		    <i>{{min}}:{{sec}}</i>
+		</div>		
+		{{seek}}						
+		<div class="button-bar">				
+			<button class="control prev button icon ion-skip-backward" ng-click="player.previous()"></button>
+			<button class="control shuffle button icon ion-shuffle" ng-click="player.shuffle()" ng-hide="player.shuffleState"></button>
+			<button class="control shuffle button icon ion-shuffle positive" ng-click="player.shuffle()" ng-show="player.shuffleState"></button>
+	        <button class="control play button icon ion-play" ng-click="player.play()" ng-hide="player.playing"></button>
+	        <button class="control pause button icon ion-pause" ng-click="player.pause()" ng-show="player.playing"></button>
+	        <button class="control repeat button icon ion-loop" ng-click="player.repeat()" ng-hide="player.repeatState"></button>
+	        <button class="control repeat button icon ion-loop positive" ng-click="player.repeat()" ng-show="player.repeatState"></button>
+	        <button class="control next button icon ion-skip-forward" ng-click="player.next()"></button>
+		</div>
+		
+	</ion-content>
+</ion-view>

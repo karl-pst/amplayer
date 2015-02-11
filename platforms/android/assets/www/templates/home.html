@@ -1,0 +1,21 @@
+<ion-view title="Home">	
+	<ion-content class="home">
+		<h1 class="logo">A</h1>
+		<div class="list list-inset loginForm">
+			<form novalidate>
+				<label class="item item-input">
+				<input type="text" name="username" ng-model="loginForm.username" placeholder="User Name">
+				</label>
+				<label class="item item-input">
+				<input type="password" name="password" ng-model="loginForm.password" placeholder="Password">
+				</label>
+				<div>
+					<button class="button button-block button-positive" ng-click="login()">Sign In</button>
+				</div>
+			</form>			
+		</div>		
+	</ion-content>
+	<div class="bar bar-footer bar-light">
+  			<div class="title footer">CrappyLabs &copy; 2014</div>
+	</div>
+</ion-view>

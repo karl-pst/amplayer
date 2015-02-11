@@ -1,0 +1,15 @@
+<ion-view title="{{playlist.name}}">
+  <ion-content has-header="true" has-bouncing="true" padding="true">
+  	<div class="list card">
+		<div class="item item-divider">
+			{{playlist.name}}
+		</div>
+
+		<a class="item item-icon-right" ng-repeat="track in songs" ng-click="player.queue.add(songs, track.title)">		    
+		    {{track.title}}
+	  	</a>			  		  	
+	</div>
+		
+  </ion-content>
+  
+</ion-view>

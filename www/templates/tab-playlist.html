@@ -1,0 +1,17 @@
+<ion-view title="Playlist">
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content has-bouncing="true" class="has-header padding">
+    <!--ion-list>
+      <ion-item ng-repeat="playlist in playlists" type="item-text-wrap" href="#/tab/playlist/{{playlist.id}}">
+        {{playlist.name}}
+      </ion-item>
+    </ion-list-->
+	<ion-item ng-repeat="playlist in playlists" type="item-text-wrap" href="#/tab/playlist/{{playlist.id}}">
+		{{playlist.name}} by <em>{{playlist.owner}}</em> ( {{playlist.items}} )
+
+
+	</ion-item>  
+  </ion-content>
+</ion-view>
