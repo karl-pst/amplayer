@@ -1,4 +1,4 @@
-Ionic App Base
+Amplayer
 =====================
 
 A starting project for Ionic that optionally supports
