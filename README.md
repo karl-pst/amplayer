@@ -25,6 +25,7 @@ More info on this can be found on the Ionic [Getting Started](http://ionicframew
 ## Server Installation
 
 In order for this project to work, you need a working ampache server installed.
+
 1. Set up a web server with apache/nginx and mysql
 2. Head over to [Releases](https://github.com/ampache/ampache/releases) and download the latest release
 3. Extract the downloaded archive to our web root directory
@@ -34,6 +35,7 @@ In order for this project to work, you need a working ampache server installed.
 ## Development environment setup
 
 To set up the dev env of this project:
+
 1. Clone this repo
 2. Make sure ionic is installed on your dev env
 3. Update services.js' `server_url` to point to your web servers `xml.server.php` file
@@ -41,4 +43,5 @@ To set up the dev env of this project:
 5. For more info about ionic commands, just run `ionic`
 
 ## Issues
+
 1. Shuffle and Repeat functions are still buggy
