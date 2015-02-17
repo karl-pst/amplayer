@@ -1,8 +1,7 @@
 Amplayer
 =====================
 
-A starting project for Ionic that optionally supports
-using custom SCSS.
+An ampache mobile player using ionic framework.
 
 ## Using this project
 
@@ -23,66 +22,23 @@ $ ionic start myProject tabs
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
 
-## Installation
+## Server Installation
 
-While we recommend using the `ionic` utility to create new Ionic projects, you can use this repo as a barebones starting point to your next Ionic app.
+In order for this project to work, you need a working ampache server installed.
+1. Set up a web server with apache/nginx and mysql
+2. Head over to [Releases](https://github.com/ampache/ampache/releases) and download the latest release
+3. Extract the downloaded archive to our web root directory
+4. Access your web server via browser and continue the setup from there
+5. For more info about the set, go to [Ampache Wiki](https://github.com/ampache/ampache/wiki)
 
-To use this project as is, first clone the repo from GitHub, then run:
+## Development environment setup
 
-```bash
-$ cd ionic-app-base
-$ sudo npm install -g cordova ionic gulp
-$ npm install
-$ gulp install
-```
-
-## Using Sass (optional)
-
-This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
-Sass's great features.
-
-Just update the `./scss/ionic.app.scss` file, and run `gulp` or `gulp watch` to rebuild the CSS files for Ionic.
-
-Note: if you choose to use the Sass method, make sure to remove the included `ionic.css` file in `index.html`, and then uncomment
-the include to your `ionic.app.css` file which now contains all your Sass code and Ionic itself:
-
-```html
-<!-- IF using Sass (run gulp sass first), then remove the CSS include above
-<link href="css/ionic.app.css" rel="stylesheet">
--->
-```
-
-## Updating Ionic
-
-To update to a new version of Ionic, open bower.json and change the version listed there.
-
-For example, to update from version `1.0.0-beta.4` to `1.0.0-beta.5`, open bower.json and change this:
-
-```
-"ionic": "driftyco/ionic-bower#1.0.0-beta.4"
-```
-
-To this:
-
-```
-"ionic": "driftyco/ionic-bower#1.0.0-beta.5"
-```
-
-After saving the update to bower.json file, run `gulp install`.
-
-Alternatively, install bower globally with `npm install -g bower` and run `bower install`.
-
-#### Using the Nightly Builds of Ionic
-
-If you feel daring and want use the bleeding edge 'Nightly' version of Ionic, change the version of Ionic in your bower.json to this:
-
-```
-"ionic": "driftyco/ionic-bower#master"
-```
-
-Warning: the nightly version is not stable.
-
+To set up the dev env of this project:
+1. Clone this repo
+2. Make sure ionic is installed on your dev env
+3. Update services.js' `server_url` to point to your web servers `xml.server.php` file
+4. Run `ionic serve` to start a local development server for app dev and testing
+5. For more info about ionic commands, just run `ionic`
 
 ## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
-
+1. Shuffle and Repeat functions are still buggy
