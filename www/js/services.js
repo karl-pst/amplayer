@@ -83,7 +83,7 @@ app.factory('dataSource', function($http, $location, loader){
       return sha256(time + key(password));
       };
 
-  var server_url = 'http://122.52.117.41/server/xml.server.php';
+  var server_url = 'http://localhost/server/xml.server.php';
 
   return {
       getAuth: function(username, password){
